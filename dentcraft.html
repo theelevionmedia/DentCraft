@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DENTCRAFT Multispeciality Dental Clinic in Olarikkara, Thrissur, Kerala. Expert dental care including implants, aligners, cosmetic dentistry & more. 5-Star Google Rated clinic." />
+  <meta name="keywords" content="dental clinic Thrissur, dentist Olarikkara, dental implants Kerala, teeth whitening Thrissur, DENTCRAFT, multispeciality dental, invisalign Kerala" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="DENTCRAFT Multispeciality Dental Clinic | Thrissur, Kerala" />
+  <meta property="og:description" content="Expert multispeciality dental care in Olarikkara, Thrissur. Implants, aligners, cosmetic dentistry and more." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#2d5a3d" />
+  <title>DENTCRAFT Multispeciality Dental Clinic | Olarikkara, Thrissur</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest: #2d5a3d;
+      --forest-dark: #1e3d2a;
+      --forest-mid: #3a7050;
+      --forest-light: #5a9469;
+      --cream: #f5f0e8;
+      --cream-dark: #ede6d6;
+      --cream-mid: #e8dfc9;
+      --gold: #b8965a;
+      --gold-light: #d4b07a;
+      --text-dark: #1a2420;
+      --text-mid: #3d4f48;
+      --text-light: #6b7f78;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 12px rgba(45,90,61,0.08);
+      --shadow-md: 0 8px 32px rgba(45,90,61,0.12);
+      --shadow-lg: 0 20px 60px rgba(45,90,61,0.18);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 40px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--cream-dark); }
+    ::-webkit-scrollbar-thumb { background: var(--forest-light); border-radius: 2px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 64px;
+      background: rgba(245,240,232,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(45,90,61,0.1);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: var(--shadow-md); }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--forest-dark);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      text-decoration: none;
+    }
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--forest); }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--forest);
+      color: var(--white) !important;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-size: 0.78rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.05em !important;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--forest-mid) !important; transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--forest-dark);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 64px; left: 0; right: 0;
+      background: var(--cream);
+      border-bottom: 1px solid var(--cream-mid);
+      z-index: 999;
+      padding: 20px 24px 28px;
+      flex-direction: column;
+      gap: 0;
+      transform: translateY(-8px);
+      opacity: 0;
+      transition: opacity 0.25s, transform 0.25s;
+    }
+    .mobile-menu.open { transform: translateY(0); opacity: 1; }
+    .mobile-menu a {
+      display: block;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--cream-mid);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-mid);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-whatsapp {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--white) !important;
+      border-radius: 50px;
+      padding: 14px 0;
+      font-weight: 600 !important;
+      font-size: 0.9rem !important;
+      border-bottom: none !important;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 64px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    /* PLACEHOLDER IMAGE TAG — replace src with your actual image */
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(30,61,42,0.88) 0%,
+        rgba(30,61,42,0.60) 50%,
+        rgba(30,61,42,0.30) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      padding: 60px 24px 80px;
+      animation: heroFadeUp 1s ease both;
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(184,150,90,0.2);
+      border: 1px solid rgba(184,150,90,0.5);
+      color: var(--gold-light);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      animation: heroFadeUp 1s 0.15s ease both;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 7vw, 4.2rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 20px;
+      animation: heroFadeUp 1s 0.25s ease both;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.8);
+      max-width: 500px;
+      margin-bottom: 36px;
+      animation: heroFadeUp 1s 0.35s ease both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      animation: heroFadeUp 1s 0.45s ease both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--white);
+      padding: 15px 28px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(184,150,90,0.4);
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(184,150,90,0.45); }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--white);
+      padding: 15px 28px;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.45);
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.8); transform: translateY(-2px); }
+
+    .hero-stats {
+      position: absolute;
+      bottom: 36px;
+      left: 24px;
+      right: 24px;
+      z-index: 2;
+      display: flex;
+      gap: 16px;
+      animation: heroFadeUp 1s 0.55s ease both;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      text-align: center;
+      flex: 1;
+    }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── GOOGLE RATING BADGE ── */
+    .rating-badge {
+      position: absolute;
+      top: 90px;
+      right: 20px;
+      z-index: 3;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      animation: badgePop 0.6s 0.8s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+    @keyframes badgePop {
+      from { opacity: 0; transform: scale(0.7) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .badge-stars {
+      display: flex;
+      gap: 3px;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+    .badge-stars i { color: #f4b400; font-size: 0.75rem; }
+    .badge-score {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1;
+    }
+    .badge-label {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-top: 3px;
+    }
+    .badge-google {
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .badge-google i { color: #4285f4; font-size: 0.7rem; }
+
+    /* ── SECTION SHARED ── */
+    section { padding: 72px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+      background: rgba(45,90,61,0.08);
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      max-width: 540px;
+      margin-bottom: 44px;
+    }
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .about-feature {
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      border: 1px solid var(--cream-mid);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .about-feature:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .about-feature i {
+      color: var(--forest);
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .about-feature h4 {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .about-feature p { font-size: 0.78rem; color: var(--text-light); line-height: 1.5; }
+
+    .about-image-block {
+      position: relative;
+    }
+    .about-img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: var(--cream-dark);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+    .about-img-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .about-accent {
+      position: absolute;
+      bottom: -16px;
+      left: -16px;
+      width: 120px;
+      height: 120px;
+      background: var(--forest);
+      border-radius: var(--radius-md);
+      z-index: -1;
+      opacity: 0.15;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--cream); }
+    .service-categories {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .cat-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 18px;
+      border-radius: 50px;
+      border: 1.5px solid var(--cream-mid);
+      background: var(--white);
+      color: var(--text-mid);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--font-body);
+    }
+    .cat-btn:hover { border-color: var(--forest-light); color: var(--forest); }
+    .cat-btn.active {
+      background: var(--forest);
+      border-color: var(--forest);
+      color: var(--white);
+    }
+    .cat-btn i { font-size: 0.8rem; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+.service-card {
+  display: none; /* Already correct */
+}
+
+/* Ensure the .visible class is the ONLY way they show up */
+.service-card.visible { 
+  display: block; 
+  animation: cardIn 0.35s ease both; 
+}
+    .service-card.visible { display: block; animation: cardIn 0.35s ease both; }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--forest-light); }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(45,90,61,0.08);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .service-icon i { color: var(--forest); font-size: 1rem; }
+    .service-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+    .service-card p { font-size: 0.78rem; color: var(--text-light); line-height: 1.55; }
+
+    /* ── DOCTORS ── */
+    #doctors { background: var(--white); }
+    .doctors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .doctor-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--cream-mid);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .doctor-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .doctor-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--cream-dark);
+      overflow: hidden;
+      position: relative;
+    }
+    .doctor-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .doctor-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, var(--cream-dark), var(--cream-mid));
+      color: var(--text-light);
+      gap: 10px;
+    }
+    .doctor-img-placeholder i { font-size: 2.5rem; opacity: 0.35; }
+    .doctor-img-placeholder span { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.5; }
+    .doctor-info { padding: 20px; }
+    .doctor-info h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .doctor-specialty {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+      margin-bottom: 10px;
+    }
+    .doctor-desc { font-size: 0.8rem; color: var(--text-light); line-height: 1.6; }
+
+    /* ── REVIEWS ── */
+    #reviews { background: var(--forest-dark); }
+    #reviews .section-label { color: var(--gold-light); background: rgba(184,150,90,0.15); }
+    #reviews .section-title { color: var(--white); }
+    #reviews .section-sub { color: rgba(255,255,255,0.6); }
+    #reviews .divider { background: var(--gold); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .review-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .review-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+    .review-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 14px;
+    }
+    .review-stars i { color: #f4b400; font-size: 0.85rem; }
+    .review-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .review-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--forest-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .review-name { font-size: 0.82rem; font-weight: 600; color: var(--white); }
+    .review-meta { font-size: 0.72rem; color: rgba(255,255,255,0.45); margin-top: 2px; }
+
+    .google-verify {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .verify-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .verify-badge i { color: #4285f4; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--cream); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .contact-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--forest);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-icon i { color: var(--white); font-size: 0.9rem; }
+    .contact-info-text h4 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); margin-bottom: 5px; }
+    .contact-info-text p, .contact-info-text a {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .contact-info-text a:hover { color: var(--forest); }
+
+    .whatsapp-card {
+      background: var(--forest);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: center;
+      color: var(--white);
+    }
+    .whatsapp-card i { font-size: 2.4rem; margin-bottom: 14px; color: #25D366; }
+    .whatsapp-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .whatsapp-card p { font-size: 0.85rem; opacity: 0.8; line-height: 1.6; margin-bottom: 24px; }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--white);
+      padding: 15px 32px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .whatsapp-btn:hover { background: #1ebe5c; transform: translateY(-2px); }
+
+    /* ── FLOATING WHATSAPP ── */
+    .float-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 20px;
+      z-index: 999;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: pulse 2.5s infinite;
+    }
+    .float-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
+    .float-whatsapp i { color: var(--white); font-size: 1.5rem; }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+      50% { box-shadow: 0 4px 32px rgba(37,211,102,0.75); }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text-dark);
+      color: rgba(255,255,255,0.6);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    .footer-logo span { color: var(--gold); }
+    footer p { font-size: 0.8rem; line-height: 1.8; }
+    footer a { color: var(--gold-light); text-decoration: none; }
+
+    /* ── SCROLL ANIMATION ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── DESKTOP ── */
+    @media (min-width: 768px) {
+      section { padding: 96px 48px; }
+      .hero-content { padding: 80px 48px 120px; }
+      .hero-stats { left: 48px; right: 48px; bottom: 48px; }
+      .rating-badge { top: 100px; right: 48px; }
+      .map-header { padding: 60px 48px 0; }
+    }
+
+    /* ── MOBILE ONLY ── */
+    @media (max-width: 767px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-menu { display: flex; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      .about-image-block { order: -1; }
+      .about-img-placeholder { aspect-ratio: 16/9; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      .hero-stats { gap: 10px; }
+      .stat-card { padding: 12px 10px; }
+      .stat-num { font-size: 1.3rem; }
+
+      .service-categories { gap: 8px; }
+      .cat-btn { padding: 8px 14px; font-size: 0.74rem; }
+
+      .doctors-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .doctor-img { aspect-ratio: 2/3; }
+
+      .reviews-grid { grid-template-columns: 1fr; }
+
+      .about-features { grid-template-columns: 1fr 1fr; }
+
+      .rating-badge { top: 80px; right: 14px; padding: 10px 12px; }
+      .badge-score { font-size: 1.3rem; }
+
+      .hero-actions { gap: 10px; }
+      .btn-primary, .btn-outline { padding: 13px 22px; font-size: 0.84rem; }
+    }
+
+    @media (max-width: 400px) {
+      .doctors-grid { grid-template-columns: 1fr; }
+      .hero-stats { display: none; }
+    }
+
+    /* ===== UTILITY ===== */
+    .max-w { max-width: 900px; margin-left: auto; margin-right: auto; }
+    .elevion-watermark {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.elevion-watermark span {
+  color: rgba(255,255,255,0.72);
+}
+
+.elevion-watermark a {
+  color: #f0d98a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.elevion-watermark a:hover {
+  opacity: 0.95;
+  color: #fff5c2;
+}
+
+.elevion-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--green-accent);
+  border-radius: 50%;
+}
+  </style>
+
+  <!-- Schema.org structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "DENTCRAFT Multispeciality Dental Clinic",
+    "description": "Multispeciality dental clinic in Olarikkara, Thrissur offering implants, aligners, cosmetic dentistry and comprehensive dental care.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Olarikkara",
+      "addressLocality": "Thrissur",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918590032834",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "50"
+    },
+    "openingHours": "Mo-Sa 09:00-20:00"
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#home">DENT<span>CRAFT</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." class="nav-cta" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#doctors" onclick="closeMobileMenu()">Doctors</a>
+  <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." class="mobile-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Book via WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img class="hero-bg-img" src="dentcrafthero.png" alt="DENTCRAFT Dental Clinic Thrissur" id="heroBgImg" />
+    <!-- Fallback gradient if no image is set -->
+  </div>
+  <div class="hero-overlay"></div>
+
+  <!-- 5-Star Google Badge -->
+  <div class="rating-badge">
+    <div class="badge-stars">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+    <div class="badge-score">5.0</div>
+    <div class="badge-label">Google Rating</div>
+    <div class="badge-google"><i class="fab fa-google"></i> Verified</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-map-marker-alt"></i>
+      Olarikkara, Thrissur, Kerala
+    </div>
+    <h1 class="hero-title">
+      Your Smile,<br><em>Crafted to Perfection</em>
+    </h1>
+    <p class="hero-sub">
+      DENTCRAFT Multispeciality Dental Clinic brings together expert clinicians and modern technology to deliver comprehensive dental care — from routine checkups to advanced cosmetic and restorative procedures.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." class="btn-primary" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Book an Appointment
+      </a>
+      <a href="#services" class="btn-outline">
+        <i class="fas fa-tooth"></i> Explore Services
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-card">
+      <div class="stat-num">5<i class="fas fa-star" style="font-size:0.9rem;color:#f4b400;margin-left:2px;"></i></div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">16+</div>
+      <div class="stat-label">Specialities</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Patient Focus</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Precision Dentistry, <em style="font-style:italic;color:var(--forest)">Compassionate Care</em></h2>
+        <div class="divider"></div>
+        <p style="font-size:0.95rem;line-height:1.8;color:var(--text-mid);margin-bottom:16px;">
+          Located in the heart of Olarikkara, Thrissur, DENTCRAFT Multispeciality Dental Clinic is built on a foundation of clinical excellence and patient-centred care. Our team of specialist dentists work across all disciplines to provide seamless, comprehensive treatment under one roof.
+        </p>
+        <p style="font-size:0.95rem;line-height:1.8;color:var(--text-mid);">
+          We combine advanced diagnostic technology with evidence-based treatment protocols — ensuring every patient receives accurate diagnosis, clear explanations, and the most appropriate course of treatment.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <i class="fas fa-microscope"></i>
+            <h4>Modern Technology</h4>
+            <p>State-of-the-art equipment for accurate diagnosis and precision treatment.</p>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Strict Hygiene</h4>
+            <p>International sterilisation standards maintained throughout the clinic.</p>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-child"></i>
+            <h4>Child-Friendly</h4>
+            <p>Patient, gentle approach to make young patients feel at ease.</p>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-comments"></i>
+            <h4>Clear Communication</h4>
+            <p>Every step explained in detail so you always understand your care.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- THIS IS THE IMAGE PART WE FIXED -->
+      <div class="about-image-block reveal" style="transition-delay:0.15s">
+        <div class="about-img-placeholder">
+          <img src="dentcraftinterior.png" alt="DENTCRAFT Clinic Interior" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div class="about-accent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Our Services</h2>
+      <div class="divider"></div>
+      <p class="section-sub">From preventive care to advanced cosmetic procedures — comprehensive dental services delivered by specialists.</p>
+    </div>
+
+    <div class="service-categories reveal">
+      <button class="cat-btn" data-cat="cosmetic" onclick="filterServices('cosmetic')">
+        <i class="fas fa-sparkles"></i> Cosmetic
+      </button>
+      <button class="cat-btn" data-cat="restorative" onclick="filterServices('restorative')">
+        <i class="fas fa-tooth"></i> Restorative
+      </button>
+      <button class="cat-btn" data-cat="orthodontic" onclick="filterServices('orthodontic')">
+        <i class="fas fa-smile"></i> Orthodontic
+      </button>
+      <button class="cat-btn" data-cat="surgical" onclick="filterServices('surgical')">
+        <i class="fas fa-user-md"></i> Surgical
+      </button>
+      <button class="cat-btn" data-cat="preventive" onclick="filterServices('preventive')">
+        <i class="fas fa-shield-virus"></i> Preventive
+      </button>
+    </div>
+
+    <div class="services-grid" id="servicesGrid">
+      <!-- COSMETIC -->
+      <div class="service-card" data-cat="cosmetic">
+        <div class="service-icon"><i class="fas fa-sun"></i></div>
+        <h3>Teeth Whitening</h3>
+        <p>Professional in-clinic whitening treatments for a brighter, more confident smile.</p>
+      </div>
+      <div class="service-card" data-cat="cosmetic">
+        <div class="service-icon"><i class="fas fa-gem"></i></div>
+        <h3>Veneers &amp; Crowns</h3>
+        <p>Custom-crafted porcelain veneers and crowns to restore and enhance tooth aesthetics.</p>
+      </div>
+      <div class="service-card" data-cat="cosmetic">
+        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Bonding</h3>
+        <p>Tooth-coloured composite bonding to repair chips, cracks and minor imperfections.</p>
+      </div>
+      <div class="service-card" data-cat="cosmetic">
+        <div class="service-icon"><i class="fas fa-star"></i></div>
+        <h3>Teeth Reshaping</h3>
+        <p>Subtle contouring procedures to improve shape, length and surface of teeth.</p>
+      </div>
+      <div class="service-card" data-cat="cosmetic">
+        <div class="service-icon"><i class="fas fa-magic"></i></div>
+        <h3>Cosmetic Procedures</h3>
+        <p>Comprehensive smile makeover treatments tailored to your individual goals.</p>
+      </div>
+      <!-- RESTORATIVE -->
+      <div class="service-card visible" data-cat="restorative">
+        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+        <h3>Dental Implants</h3>
+        <p>Permanent, natural-looking tooth replacements with titanium implant technology.</p>
+      </div>
+      <div class="service-card visible" data-cat="restorative">
+        <div class="service-icon"><i class="fas fa-fill-drip"></i></div>
+        <h3>Fillings &amp; Sealants</h3>
+        <p>Tooth-coloured composite fillings and protective sealants for lasting restoration.</p>
+      </div>
+      <div class="service-card visible" data-cat="restorative">
+        <div class="service-icon"><i class="fas fa-link"></i></div>
+        <h3>Dentures &amp; Bridges</h3>
+        <p>Removable and fixed prosthetic solutions to restore full dental function.</p>
+      </div>
+      <div class="service-card visible" data-cat="restorative">
+        <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
+        <h3>Root Canals</h3>
+        <p>Precise endodontic treatment to save damaged or infected teeth comfortably.</p>
+      </div>
+      <!-- ORTHODONTIC -->
+      <div class="service-card visible" data-cat="orthodontic">
+        <div class="service-icon"><i class="fas fa-align-center"></i></div>
+        <h3>Clear Aligners / Invisalign</h3>
+        <p>Certified Invisalign provider — discreet, removable orthodontic correction.</p>
+      </div>
+      <div class="service-card visible" data-cat="orthodontic">
+        <div class="service-icon"><i class="fas fa-smile-beam"></i></div>
+        <h3>Orthodontist</h3>
+        <p>Full orthodontic assessment and treatment planning for children and adults.</p>
+      </div>
+      <!-- SURGICAL -->
+      <div class="service-card visible" data-cat="surgical">
+        <div class="service-icon"><i class="fas fa-user-md"></i></div>
+        <h3>Oral Surgery</h3>
+        <p>Minor and complex oral surgical procedures performed under appropriate anaesthesia.</p>
+      </div>
+      <div class="service-card visible" data-cat="surgical">
+        <div class="service-icon"><i class="fas fa-minus-circle"></i></div>
+        <h3>Extractions</h3>
+        <p>Safe, gentle tooth extractions including impacted wisdom teeth removal.</p>
+      </div>
+      <!-- PREVENTIVE -->
+      <div class="service-card visible" data-cat="preventive">
+        <div class="service-icon"><i class="fas fa-search"></i></div>
+        <h3>Dental Checkups</h3>
+        <p>Thorough clinical examinations and radiographic assessments for early detection.</p>
+      </div>
+      <div class="service-card visible" data-cat="preventive">
+        <div class="service-icon"><i class="fas fa-broom"></i></div>
+        <h3>Teeth Cleaning</h3>
+        <p>Professional scaling and polishing to remove plaque, tartar and surface stains.</p>
+      </div>
+      <div class="service-card visible" data-cat="preventive">
+        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Mouth Guards</h3>
+        <p>Custom-fitted guards for bruxism protection and sports safety.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-label">Our Team</span>
+      <h2 class="section-title">Meet the Doctors</h2>
+      <div class="divider"></div>
+      <p class="section-sub">A multidisciplinary team of specialist dentists dedicated to providing expert care across all areas of dentistry.</p>
+    </div>
+
+    <div class="doctors-grid">
+      <!-- DOCTOR 1 -->
+      <div class="doctor-card reveal">
+        <div class="doctor-img">
+          <!-- REPLACE src BELOW WITH DOCTOR PHOTO -->
+          <img src="" alt="Dr. [Name]" onerror="this.style.display='none'" />
+          <div class="doctor-img-placeholder">
+            <i class="fas fa-user-md"></i>
+            <span>Doctor Photo</span>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. [Full Name]</h3>
+          <div class="doctor-specialty">Chief Dental Surgeon</div>
+          <p class="doctor-desc">Specialist with expertise in comprehensive dental care and advanced restorative procedures. [Add qualifications and experience here.]</p>
+        </div>
+      </div>
+
+      <!-- DOCTOR 2 -->
+      <div class="doctor-card reveal" style="transition-delay:0.1s">
+        <div class="doctor-img">
+          <img src="" alt="Dr. [Name]" onerror="this.style.display='none'" />
+          <div class="doctor-img-placeholder">
+            <i class="fas fa-user-md"></i>
+            <span>Doctor Photo</span>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. [Full Name]</h3>
+          <div class="doctor-specialty">Orthodontist &amp; Aligner Specialist</div>
+          <p class="doctor-desc">Certified Invisalign provider specialising in orthodontic treatment for patients of all ages. [Add qualifications here.]</p>
+        </div>
+      </div>
+
+      <!-- DOCTOR 3 -->
+      <div class="doctor-card reveal" style="transition-delay:0.2s">
+        <div class="doctor-img">
+          <img src="" alt="Dr. [Name]" onerror="this.style.display='none'" />
+          <div class="doctor-img-placeholder">
+            <i class="fas fa-user-md"></i>
+            <span>Doctor Photo</span>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. [Full Name]</h3>
+          <div class="doctor-specialty">Cosmetic Dentist</div>
+          <p class="doctor-desc">Specialist in smile design, veneers, whitening and aesthetic dental procedures. [Add qualifications here.]</p>
+        </div>
+      </div>
+
+      <!-- DOCTOR 4 -->
+      <div class="doctor-card reveal" style="transition-delay:0.3s">
+        <div class="doctor-img">
+          <img src="" alt="Dr. [Name]" onerror="this.style.display='none'" />
+          <div class="doctor-img-placeholder">
+            <i class="fas fa-user-md"></i>
+            <span>Doctor Photo</span>
+          </div>
+        </div>
+        <div class="doctor-info">
+          <h3>Dr. [Full Name]</h3>
+          <div class="doctor-specialty">Oral &amp; Maxillofacial Surgeon</div>
+          <p class="doctor-desc">Expert in oral surgery, extractions and surgical dental procedures. [Add qualifications here.]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-label">Patient Stories</span>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Real experiences from real patients — shared directly on Google.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Friendly, professional, and made me feel so comfortable throughout my treatment. They explained everything clearly and were very gentle. Highly recommend for anyone looking for excellent dental care."</p>
+        <div class="review-author">
+          <div class="review-avatar">S</div>
+          <div>
+            <div class="review-name">Sajitha T.G</div>
+            <div class="review-meta">A year ago &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.08s">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Had a great experience at this dental clinic. Doctor explained every step of the treatment clearly, which made me feel comfortable and at ease. The clinic is very clean, well equipped with modern technology and they maintain excellent hygiene standards."</p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div>
+            <div class="review-name">Annie John</div>
+            <div class="review-meta">8 months ago &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.16s">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"An awesome place — I would definitely recommend it to everyone with children. They were so patient and understanding with my anxious child, making the experience as smooth as possible. I appreciate their gentle approach and the kid-friendly atmosphere."</p>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div>
+            <div class="review-name">Raina Das</div>
+            <div class="review-meta">A year ago &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.24s">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Went for my grandchildren. Patiently checked the kid, gave a vivid explanation of the problems and suggestions to stop the issue. Totally satisfied."</p>
+        <div class="review-author">
+          <div class="review-avatar">K</div>
+          <div>
+            <div class="review-name">Kalpana Nagarajan</div>
+            <div class="review-meta">3 months ago &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.32s">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Excellent service and a very professional dentist. Patient, and explained every step involved in the treatment. I recommend this clinic to anyone looking for quality dental care."</p>
+        <div class="review-author">
+          <div class="review-avatar">V</div>
+          <div>
+            <div class="review-name">Vivek Mookonil</div>
+            <div class="review-meta">A month ago &middot; Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.40s">
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="review-text">"Visited for my wife's condition. The doctor was calm and empathetic. She understood the need and recommended medications based on my wife's health — there was no push to undergo surgery. Instead, home remedies were recommended. Thanks for the care, doctor."</p>
+        <div class="review-author">
+          <div class="review-avatar">R</div>
+          <div>
+            <div class="review-name">Rajesh K S</div>
+            <div class="review-meta">2 months ago &middot; Google Review &middot; Local Guide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="google-verify reveal">
+      <a href="https://share.google/UGAealkjFOIB7AsUa" target="_blank" rel="noopener" class="verify-badge">
+        <i class="fab fa-google"></i> View All Reviews on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Visit Us or Reach Out</h2>
+      <div class="divider"></div>
+      <p class="section-sub">We are always available to answer your questions and help you schedule an appointment.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-info-text">
+            <h4>Location</h4>
+            <p>DENTCRAFT Multispeciality Dental Clinic<br>Olarikkara, Thrissur, Kerala</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-info-text">
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." target="_blank" rel="noopener">+91 85900 32834</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-info-text">
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 8:00 PM<br>Sunday: By Appointment</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fab fa-google"></i></div>
+          <div class="contact-info-text">
+            <h4>Google Reviews</h4>
+            <a href="https://share.google/UGAealkjFOIB7AsUa" target="_blank" rel="noopener">View our 5-Star ratings</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="whatsapp-card">
+          <i class="fab fa-whatsapp"></i>
+          <h3>Book an Appointment</h3>
+          <p>Message us on WhatsApp for quick appointment booking, queries about treatment, or any dental concerns. We respond promptly.</p>
+          <a href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." class="whatsapp-btn" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">DENT<span>CRAFT</span></div>
+  <p>Multispeciality Dental Clinic &middot; Olarikkara, Thrissur, Kerala</p>
+  <p style="margin-top:8px;">
+    <a href="https://wa.me/918590032834">+91 85900 32834</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://share.google/UGAealkjFOIB7AsUa" target="_blank" rel="noopener">Google Reviews</a>
+  </p>
+  <p style="margin-top:16px;font-size:0.72rem;opacity:0.45;">&copy; 2026 DENTCRAFT Multispeciality Dental Clinic. All rights reserved.</p>
+  <div class="elevion-watermark">
+        <div class="elevion-dot"></div>
+        <a href="#">Elevion Media</a>
+      </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="float-whatsapp" href="https://wa.me/918590032834?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20DENTCRAFT." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+  // NAV SCROLL
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // HAMBURGER
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open', open);
+    mobileMenu.style.display = open ? 'flex' : 'none';
+  });
+  function closeMobileMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    setTimeout(() => { mobileMenu.style.display = 'none'; }, 250);
+  }
+
+
+  // SERVICE FILTER
+  function filterServices(cat) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+    document.querySelectorAll('.service-card').forEach(card => {
+      const match = cat === 'all' || card.dataset.cat === cat;
+      card.classList.toggle('visible', match);
+    });
+  }
+
+  // SCROLL REVEAL
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // This will automatically "click" the cosmetic category when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+  filterServices('cosmetic'); 
+});
+
+</script>
+</body>
+</html>
